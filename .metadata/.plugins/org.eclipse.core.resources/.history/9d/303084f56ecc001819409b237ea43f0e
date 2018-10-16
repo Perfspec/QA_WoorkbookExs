@@ -1,0 +1,5 @@
+package com.qa.OOPIntro;
+
+public interface Printer {
+
+}

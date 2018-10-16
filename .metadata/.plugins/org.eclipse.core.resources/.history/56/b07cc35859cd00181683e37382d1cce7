@@ -1,0 +1,30 @@
+package com.qa.FactorialsBackwards;
+
+
+public class App 
+{
+    public static void main( String[] args )
+    {
+        reverse(3628800);
+        reverse(479001600);
+        reverse(6);
+        reverse(18);
+    }
+    
+    public static String reverse(Integer x) {
+    	Integer currentValue = x;
+    	Integer nextValue;
+    	Integer counter = 2;
+    	while(currentValue > 1) {
+    	
+    		nextValue =  currentValue/counter;
+    		if(counter*nextValue == currentValue) {
+    			counter++;
+    			currentValue = nextValue;
+    		} else {
+    			return "NONE";
+    		}    		
+    	}
+    	return counter.toString()+"!";
+    }
+}

@@ -1,0 +1,13 @@
+package com.qa.Garage;
+
+public class Car extends Vehicle {
+	
+	Car(double m, double w, String c) {
+		this.setWheels(4);
+		this.setMaxSpeed(m);
+		this.setWeight(w);
+		this.setColour(c);
+	}
+	
+
+}

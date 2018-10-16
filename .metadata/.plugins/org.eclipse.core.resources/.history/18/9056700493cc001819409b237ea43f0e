@@ -1,0 +1,10 @@
+package com.qa.Garage;
+
+public class GarethsShoulder extends Vehicle {
+	GarethsShoulder(){
+		this.setWheels(0);
+		this.setColour("Blue");
+		
+	}
+
+}

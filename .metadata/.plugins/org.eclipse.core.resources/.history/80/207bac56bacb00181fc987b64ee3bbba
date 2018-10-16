@@ -1,0 +1,133 @@
+
+public class Runner {
+	public static void main(String[] args) {
+		
+		printIntFromTo(1,10);
+	}
+	
+	public static void printIntFromTo(int start, int stop) {
+		if(start < stop) {
+			for(int i = start; i <= stop; i++) {
+				System.out.println(i);
+			}
+		} else {
+			for(int i = stop; i <= start; i++) {
+				System.out.println(i);
+			}
+		}
+	}
+
+	public static void printWordInt(int x) {
+		if(x<0) {
+			System.out.println("Non Positive");
+		}
+		else {
+			if(x < 20) {
+				switch(x) {
+				case 1:
+					System.out.println("one");
+					break;
+				case 2:
+					System.out.println("two");
+					break;
+				case 3:
+					System.out.println("three");
+					break;
+				case 4:
+					System.out.println("four");
+					break;
+				case 5:
+					System.out.println("five");
+					break;
+				case 6:
+					System.out.println("six");
+					break;
+				case 7:
+					System.out.println("seven");
+					break;
+				case 8:
+					System.out.println("eight");
+					break;
+				case 9:
+					System.out.println("nine");
+					break;
+				case 10:
+					System.out.println("ten");
+					break;
+				case 11:
+					System.out.println("eleven");
+					break;
+				case 12:
+					System.out.println("twelve");
+					break;
+				case 13:
+					System.out.println("thirteen");
+					break;
+				case 14:
+					System.out.println("fourteen");
+					break;
+				case 15:
+					System.out.println("fifteen");
+					break;
+				case 16:
+					System.out.println("sixteen");
+					break;
+				case 17:
+					System.out.println("seventeen");
+					break;
+				case 18:
+					System.out.println("eightteen");
+					break;
+				case 19:
+					System.out.println("nineteen");
+					break;
+				default:
+					System.out.println("Error 1");
+				} 
+			} else {
+				int y = x-x%10;
+				switch(y) {
+				case 2:
+					System.out.print("twenty ");
+					break;
+				case 3:
+					System.out.print("thirty ");
+					break;
+				case 4:
+					System.out.print("fourty ");
+					break;
+				case 5:
+					System.out.print("fifty ");
+					break;
+				case 6:
+					System.out.print("sixty ");
+					break;
+				case 7:
+					System.out.print("seventy ");
+					break;
+				case 8:
+					System.out.print("eighty ");
+					break;
+				case 9:
+					System.out.print("ninety ");
+					break;
+				default:
+					System.out.println("Error 2");
+					
+				}
+			}
+		}
+	}
+	
+	public static void printWordIntFromTo(int start, int stop) {
+		if(start < stop) {
+			for(int i = start; i <= stop; i++) {
+				printWordInt(i);
+			}
+		} else {
+			for(int i = stop; i <= start; i++) {
+				printWordInt(i);
+			}
+		}
+	}
+}

@@ -1,0 +1,16 @@
+package com.qa.BlackJack;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+public class td {
+
+	@Test
+	public void test() {
+		
+		
+		
+	}
+
+}

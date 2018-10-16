@@ -1,0 +1,13 @@
+package com.qa.GoldilocksBearNecessities;
+
+
+public class App 
+{
+    public static void main( String[] args )
+    {
+        Seat s1 = new Seat(30,50);
+        System.out.println(s1.checkSeat());
+    }
+    
+    
+}

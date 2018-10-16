@@ -1,0 +1,9 @@
+package com.qa.BlackJack;
+
+public class Game {
+	
+	public int play(int player1, int player2) {
+		
+	}
+
+}

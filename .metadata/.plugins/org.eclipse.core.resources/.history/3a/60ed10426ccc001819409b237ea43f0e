@@ -1,0 +1,15 @@
+package com.qa.OOPIntro;
+
+public class Delegate {
+	private String name;
+	private int softSkills;
+	private int techSkills;
+	
+	public Delegate(String n, int s, int t) {
+		this.name = n;
+		this.softSkills = s;
+		this.techSkills = t;
+	}
+	
+
+}

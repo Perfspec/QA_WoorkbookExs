@@ -1,0 +1,11 @@
+package com.qa.Garage;
+
+public class Car extends Vehicle {
+	
+	Car(String c) {
+		this.setWheels(4);
+		this.setColour(c);
+	}
+	
+
+}

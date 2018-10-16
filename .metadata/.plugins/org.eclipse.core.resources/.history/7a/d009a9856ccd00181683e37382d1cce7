@@ -1,0 +1,5 @@
+package com.qa.GoldilocksBearNecessities;
+
+public class Porridge {
+	int temp;
+}

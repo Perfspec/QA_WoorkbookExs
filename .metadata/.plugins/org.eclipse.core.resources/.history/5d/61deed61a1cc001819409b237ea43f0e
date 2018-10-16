@@ -1,0 +1,27 @@
+package com.qa.Garage;
+
+import java.util.List;
+import java.util.Optional;
+
+public class Garagio {
+	private List<Vehicle> myVehics;
+	
+	Garagio(List<Vehicle> d){
+		myVehics = d;
+	}
+	
+	public List<Vehicle> getList(){
+		return myVehics;
+	}
+	public void add(Vehicle a){
+		this.getList().add(a);
+	}
+	public void setList(List<Vehicle> d) {
+		myVehics = d;
+	}
+	
+	public Optional<Double> cost() {
+		return this.getList().stream().map(n ->n.calculateCost()).reduce((a,b)->a+b);
+	}
+
+}

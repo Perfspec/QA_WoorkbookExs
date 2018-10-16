@@ -1,0 +1,26 @@
+
+public class Results {
+	double physics;
+	double chemistry;
+	double biology;
+	double total;
+	double percentage;
+	
+	public void displayMarks() {
+		System.out.println("Physics  : " + physics + "/150");
+		System.out.println("Chemistry: " + chemistry + "/150");
+		System.out.println("Biology  : " + biology + "/150");
+		total = physics + chemistry + biology;
+		System.out.println("Total    : " + total + "/450");
+	}
+
+	public void percentageOverall() {
+		percentage = total/4.5;
+		System.out.println("% Overall: " + percentage);
+		if (percentage < 0.6) {
+			System.out.println("Fail");
+		} else { 
+			System.out.println("Pass");
+		}
+	}
+}

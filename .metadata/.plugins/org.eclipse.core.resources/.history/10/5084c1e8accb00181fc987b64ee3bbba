@@ -1,0 +1,69 @@
+
+public class Runner {
+	public static void main(String[] args) {
+		
+		printIntFromTo(1,10);
+	}
+	
+	public static void printIntFromTo(int start, int stop) {
+		if(start < stop) {
+			for(int i = start; i <= stop; i++) {
+				System.out.println(i);
+			}
+		} else {
+			for(int i = stop; i <= start; i++) {
+				System.out.println(i);
+			}
+		}
+	}
+
+	public static void printWordInt(int x) {
+		if(x<0) {
+			System.out.println("Non Positive");
+		} else {
+			if(x < 20) {
+				switch(x) {
+				case 1:
+					System.out.println("one");
+					break;
+				case 2:
+					System.out.println("one");
+					break;
+				case 3:
+					System.out.println("one");
+					break;
+				case 4:
+					System.out.println("one");
+					break;
+				case 5:
+					System.out.println("one");
+					break;
+				case 6:
+					System.out.println("one");
+					break;
+				case 7:
+					System.out.println("one");
+					break;
+				case 8:
+					System.out.println("one");
+					break;
+				case 9:
+					System.out.println("one");
+					break;
+				}
+			}
+		}
+	}
+	
+	public static void printWordIntFromTo(int start, int stop) {
+		if(start < stop) {
+			for(int i = start; i <= stop; i++) {
+				System.out.println(i);
+			}
+		} else {
+			for(int i = stop; i <= start; i++) {
+				System.out.println(i);
+			}
+		}
+	}
+}

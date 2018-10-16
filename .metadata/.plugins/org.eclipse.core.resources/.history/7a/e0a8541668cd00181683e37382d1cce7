@@ -1,0 +1,22 @@
+package com.qa.GoldilocksBearNecessities;
+
+public class Seat {
+	private Integer chairReq;
+	private Integer tempCelsius;
+	
+	Seat(Integer c, Integer t){
+		chairReq = c;
+		tempCelsius = t;
+	}
+	
+	public void showSeat() {
+		System.out.println(chairReq.toString() + "  " + tempCelsius.toString());
+	}
+	
+	public boolean checkSeat() {
+		
+		return (chairReq > 99)&&(tempCelsius < 81);
+		
+	}
+
+}

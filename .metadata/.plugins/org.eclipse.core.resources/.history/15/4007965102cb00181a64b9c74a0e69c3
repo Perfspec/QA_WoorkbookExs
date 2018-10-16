@@ -1,0 +1,24 @@
+
+public class Runner {
+	
+	public static void main(String[] args) {
+		double physics = 100;
+		double chemistry = 120;
+		double biology = 145;
+		double total = 0;
+		double percentage = 0;
+		
+		displayMarks();
+		
+	}
+	
+	public static void displayMarks() {
+		System.out.println("Physics  : " + physics);
+		System.out.println("Chemistry: " + chemistry);
+		System.out.println("Biology  : " + biology);
+		total = physics + chemistry + biology;
+		System.out.println("Total    : " + total);
+	}
+	
+	
+}

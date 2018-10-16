@@ -1,0 +1,12 @@
+
+public class Checkers {
+	static boolean compare2Value(String s) {
+		String value = "Kowabunga";
+		return value.equals(s);
+	}
+	
+	static boolean compareStrings(String s, String t) {
+		return t.equals(s);
+	}
+
+}

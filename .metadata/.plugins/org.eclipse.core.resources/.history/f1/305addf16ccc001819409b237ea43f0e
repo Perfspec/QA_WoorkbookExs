@@ -1,0 +1,13 @@
+package com.qa.OOPIntro;
+
+public class Runner {
+
+	public static void main(String[] args) {
+		
+		Delegate d1 = new Delegate("Lyusien",10,"Legend");
+		
+		d1.out();
+
+	}
+
+}

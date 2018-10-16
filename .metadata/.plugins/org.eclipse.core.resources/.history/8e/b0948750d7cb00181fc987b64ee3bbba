@@ -1,0 +1,15 @@
+import java.util.function.Predicate;
+import java.util.function.BiPredicate;
+public class Runner {
+		
+	public static void main(String[] args) {
+		
+		Predicate<String> comp = s -> System.out.println(s.equals("Kawabunga"));
+		BiPredicate<String,String> comp2 = (s,t) -> s.equals(t);
+	
+	comp.test("hg");
+	System.out.println(comp2.test("Iuri", "Lyusien"));
+	
+	}
+
+}

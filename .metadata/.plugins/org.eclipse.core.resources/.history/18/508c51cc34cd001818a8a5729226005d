@@ -1,0 +1,48 @@
+package com.qa.Garage;
+
+import java.util.List;
+import java.util.Optional;
+import java.util.function.Consumer;
+import java.util.function.Predicate;
+import java.util.stream.Collectors;
+
+public class Garagio {
+	private List<Vehicle> myVehics;
+	
+	Garagio(List<Vehicle> d) {
+		myVehics = d;
+	}
+	
+	public List<Vehicle> getList() {
+		return myVehics;
+	}
+	
+	public void setList(List<Vehicle> d) {
+		myVehics = d;
+	}
+	
+	public Optional<Double> cost() {
+		return this.getList().stream().map(n ->n.calculateCost()).reduce((a,b)->a+b);
+	}
+	
+	public void add(Vehicle a) {
+		this.getList().add(a);
+	}
+	
+	public void rm(Vehicle a) {
+		
+		this.getList().remove(a);
+	}
+	
+	public void rm(String iD) {
+		Predicate<Vehicle> q = v -> v.getID().equals(iD);
+		Consumer<Vehicle> p = v -> this.getList().remove(v);
+		this.getList().stream().filter(q).forEach(p);
+	}
+	
+	public void printList() {
+		this.getList().stream().forEach(n ->n.printVehicle());
+		System.out.println();
+	}
+
+}

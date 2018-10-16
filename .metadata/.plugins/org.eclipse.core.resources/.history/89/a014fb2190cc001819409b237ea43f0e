@@ -1,0 +1,41 @@
+package com.qa.Garage;
+
+public abstract class Vehicle {
+	private int numWheels;
+	private double maxSpeedMph;
+	private double weightKg;
+	private String colour;
+	
+	Vehicle() {	}
+	
+	public int getWheels() {
+		return numWheels;
+	}
+	public double getMaxSpeed() {
+		return maxSpeedMph;
+	}
+	public double getWeight() {
+		return weightKg;
+	}
+	public String getColour() {
+		return colour;
+	}
+	
+	
+	public void setWheels(int w) {
+		numWheels = w;
+	}	
+	public void setMaxSpeed(double w) {
+		maxSpeedMph = w;
+	}
+	public void setWeight(double w) {
+		weightKg = w;
+	}
+	public void setColour(String w) {
+		colour = w;
+	}
+	
+	
+	
+
+}
