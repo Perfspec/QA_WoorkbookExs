@@ -59,6 +59,7 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="package">
+			<item value="com.qa.PrimeNumberCount"/>
 			<item value="com.qa.PairVinultaskTwo"/>
 			<item value="com.qa.PairProgrammingAdvanced"/>
 			<item value="com.qa.PairProgramming"/>
@@ -74,6 +75,7 @@
 			<item value="com.qa"/>
 		</list>
 		<list key="artifactId">
+			<item value="PrimeNumberCount"/>
 			<item value="PairVinultaskTwo"/>
 			<item value="PairProgrammingAdvanced"/>
 			<item value="PairProgramming"/>

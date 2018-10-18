@@ -1,7 +1,0 @@
-
-public class Hello {
-	static void printMessage(String msg) {
-		System.out.println(msg+"!");
-	}
-
-}

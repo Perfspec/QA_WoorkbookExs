@@ -1,9 +1,0 @@
-package com.qa.GoldilocksBearNecessities;
-
-public class Seat {
-	private Integer chairReq;
-	private Integer tempCelsius;
-	
-	
-
-}

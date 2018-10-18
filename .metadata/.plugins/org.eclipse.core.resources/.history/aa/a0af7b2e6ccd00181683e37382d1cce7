@@ -1,7 +1,0 @@
-package com.qa.GoldilocksBearNecessities;
-
-import java.util.List;
-
-public class RowOfSeats {
-	
-}
