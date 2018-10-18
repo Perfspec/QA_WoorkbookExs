@@ -44,6 +44,7 @@
 	</section>
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="C:\Users\Admin\eclipse-workspace\FileIOPractise\src\Runner.java"/>
 			<item value="C:\Users\Admin\eclipse-workspace\PairProgramming\src\test\java\com\qa\PairProgramming\Merger.java"/>
 			<item value="C:\Users\Admin\eclipse-workspace\CompetionPosition\src\main\java\com\qa\CompetionPosition\App.java"/>
 			<item value="C:\Users\Admin\eclipse-workspace\PrintNumbers\src\Runner.java"/>
@@ -59,6 +60,7 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="package">
+			<item value="com.qa.PrimeRecursiveCounter"/>
 			<item value="com.qa.PrimeNumberCount"/>
 			<item value="com.qa.PairVinultaskTwo"/>
 			<item value="com.qa.PairProgrammingAdvanced"/>
@@ -75,6 +77,7 @@
 			<item value="com.qa"/>
 		</list>
 		<list key="artifactId">
+			<item value="PrimeRecursiveCounter"/>
 			<item value="PrimeNumberCount"/>
 			<item value="PairVinultaskTwo"/>
 			<item value="PairProgrammingAdvanced"/>
