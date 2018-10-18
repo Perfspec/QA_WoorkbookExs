@@ -44,6 +44,7 @@
 	</section>
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="C:\Users\Admin\eclipse-workspace\PairProgramming\src\test\java\com\qa\PairProgramming\Merger.java"/>
 			<item value="C:\Users\Admin\eclipse-workspace\CompetionPosition\src\main\java\com\qa\CompetionPosition\App.java"/>
 			<item value="C:\Users\Admin\eclipse-workspace\PrintNumbers\src\Runner.java"/>
 		</list>
@@ -58,6 +59,9 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="package">
+			<item value="com.qa.PairVinultaskTwo"/>
+			<item value="com.qa.PairProgrammingAdvanced"/>
+			<item value="com.qa.PairProgramming"/>
 			<item value="com.qa.CalculatorPeerProgramming"/>
 			<item value="com.qa.GoldilocksBearNecessities"/>
 			<item value="com.qa.CompetionPosition"/>
@@ -70,6 +74,9 @@
 			<item value="com.qa"/>
 		</list>
 		<list key="artifactId">
+			<item value="PairVinultaskTwo"/>
+			<item value="PairProgrammingAdvanced"/>
+			<item value="PairProgramming"/>
 			<item value="CalculatorPeerProgramming"/>
 			<item value="GoldilocksBearNecessities"/>
 			<item value="CompetionPosition"/>
