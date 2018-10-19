@@ -6,8 +6,8 @@ public class App
     {
     	PrimeRecursive pr = new PrimeRecursive();
     	long startTime = System.nanoTime();
-    	pr.addUntil(3000);
+    	System.out.println(pr.countPrimes(30000));
     	long endTime = System.nanoTime();
-		System.out.println((endTime-startTime)/1000000000);
+		System.out.println((endTime-startTime)/1000000);
     }
 }

@@ -1,39 +1,28 @@
 package com.qa.PrimeRecursiveCounter;
 
-import java.util.ArrayList;
-
 public class PrimeRecursive {
 	
-	private boolean potentiallyPrime;
-	
-	public void addUntil(Integer stop) {
-		ArrayList<Integer> primes = new ArrayList<Integer>();
-		primes.add(2);
-		primes.add(3);
-		primes.add(5);
-		primes.add(7);
-		int current = 11;
-		while(current <= stop) {
-			primes.add(nextPrime(current, primes));
+	public int countPrimes(int stop) {
+		int primeCounter=0;
+		for(int current = 2; current <= stop; current++) {
+			if(checkPrime(current)) {
+				primeCounter++;
+			}
 		}
-		System.out.println(primes.size());
+		return primeCounter;
 	}
 	
-	public Integer nextPrime(Integer current, ArrayList<Integer> primes) {
+	public boolean checkPrime(int subject) {
+		return	(rPrime(subject, subject-1)==1);
+	}
 	
-		potentiallyPrime = true;
-		innerloop:
-			for(Integer p : primes) {
-				if(current%p==0) {
-					potentiallyPrime = false;
-					break innerloop;
-				}
-			}
-		if(potentiallyPrime) {
-			return current;
-		} else {
-			return nextPrime(++current,primes);
-		}		
+	public static int rPrime(int n, int i) {
+		if(i==1)
+			return 1;
+		else if(n%i==0)
+			return 0;
+		else
+			return rPrime(n,i-1);
 	}
 
 }

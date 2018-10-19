@@ -60,6 +60,8 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="package">
+			<item value="com.qa"/>
+			<item value="com.qa.Hospital"/>
 			<item value="com.qa.PrimeRecursiveCounter"/>
 			<item value="com.qa.PrimeNumberCount"/>
 			<item value="com.qa.PairVinultaskTwo"/>
@@ -71,12 +73,13 @@
 			<item value="com.qa.FactorialsBackwards"/>
 			<item value="com.qa.LibraryTDD"/>
 			<item value="com.qa.BlackJack"/>
-			<item value="com.qa"/>
 		</list>
 		<list key="groupId">
 			<item value="com.qa"/>
 		</list>
 		<list key="artifactId">
+			<item value="OfflineExercises"/>
+			<item value="Hospital"/>
 			<item value="PrimeRecursiveCounter"/>
 			<item value="PrimeNumberCount"/>
 			<item value="PairVinultaskTwo"/>
