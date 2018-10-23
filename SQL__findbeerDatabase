@@ -1,0 +1,89 @@
+-- MySQL Workbench Forward Engineering
+
+SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0;
+SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0;
+SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='TRADITIONAL,ALLOW_INVALID_DATES';
+
+-- -----------------------------------------------------
+-- Schema mydb
+-- -----------------------------------------------------
+-- -----------------------------------------------------
+-- Schema findbeerdatabase
+-- -----------------------------------------------------
+
+-- -----------------------------------------------------
+-- Schema findbeerdatabase
+-- -----------------------------------------------------
+CREATE SCHEMA IF NOT EXISTS `findbeerdatabase` DEFAULT CHARACTER SET utf8 ;
+USE `findbeerdatabase` ;
+
+-- -----------------------------------------------------
+-- Table `findbeerdatabase`.`Brewer`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `findbeerdatabase`.`Brewer` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `name` CHAR(255) NULL,
+  `logoURL` CHAR(255) NULL,
+  PRIMARY KEY (`id`))
+ENGINE = InnoDB;
+
+
+-- -----------------------------------------------------
+-- Table `findbeerdatabase`.`Bar`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `findbeerdatabase`.`Bar` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `name` CHAR(255) NULL,
+  `x` DECIMAL NULL,
+  `y` DECIMAL NULL,
+  `descriptionProfile` VARCHAR(1000) NULL,
+  `logo` CHAR(255) NULL,
+  PRIMARY KEY (`id`))
+ENGINE = InnoDB;
+
+
+-- -----------------------------------------------------
+-- Table `findbeerdatabase`.`Drink`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `findbeerdatabase`.`Drink` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `name` CHAR(255) NULL,
+  `alcoholVol` DECIMAL NULL,
+  `Brewer_iD` INT NOT NULL,
+  PRIMARY KEY (`id`, `Brewer_iD`),
+  INDEX `fk_Drink_Brewer_idx` (`Brewer_iD` ASC),
+  CONSTRAINT `fk_Drink_Brewer`
+    FOREIGN KEY (`Brewer_iD`)
+    REFERENCES `findbeerdatabase`.`Brewer` (`id`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION)
+ENGINE = InnoDB;
+
+
+-- -----------------------------------------------------
+-- Table `findbeerdatabase`.`OnSale`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `findbeerdatabase`.`OnSale` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `Drink_id` INT NOT NULL,
+  `Drink_Brewer_iD` INT NOT NULL,
+  `Bar_id` INT NOT NULL,
+  PRIMARY KEY (`id`, `Drink_id`, `Drink_Brewer_iD`, `Bar_id`),
+  INDEX `fk_OnSale_Drink1_idx` (`Drink_id` ASC, `Drink_Brewer_iD` ASC),
+  INDEX `fk_OnSale_Bar1_idx` (`Bar_id` ASC),
+  CONSTRAINT `fk_OnSale_Drink1`
+    FOREIGN KEY (`Drink_id` , `Drink_Brewer_iD`)
+    REFERENCES `findbeerdatabase`.`Drink` (`id` , `Brewer_iD`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION,
+  CONSTRAINT `fk_OnSale_Bar1`
+    FOREIGN KEY (`Bar_id`)
+    REFERENCES `findbeerdatabase`.`Bar` (`id`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION)
+ENGINE = InnoDB;
+
+
+SET SQL_MODE=@OLD_SQL_MODE;
+SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS;
+SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;
